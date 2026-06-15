@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engagements — COBAT Constructions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    </a>
+    <a href="index.html" style="display:none; align-items:center; gap:4px; font-family:Georgia,serif; font-size:1.1rem; font-weight:900; color:var(--bordeaux);">
+      <span style="font-size:2rem; line-height:1;">C</span>
+      <div style="line-height:1.1">
+        <div style="font-size:0.9rem; color:var(--bordeaux); letter-spacing:0.05em;">OBAT</div>
+        <div style="font-size:0.9rem; color:var(--bleu); letter-spacing:0.05em;">ONSTRUCTIONS</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-item">Accueil</a>
+      <a href="entreprise.html" class="nav-item">L'Entreprise</a>
+      <a href="realisations.html" class="nav-item">Nos Réalisations</a>
+      <a href="expertises.html" class="nav-item">Nos Expertises</a>
+      <a href="engagements.html" class="nav-item actif">Engagements</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Accueil</a>
+    <a href="entreprise.html">L'Entreprise</a>
+    <a href="realisations.html">Nos Réalisations</a>
+    <a href="expertises.html">Nos Expertises</a>
+    <a href="engagements.html" class="actif">Engagements</a>
+    <a href="contact.html" style="color:var(--bordeaux); font-weight:700;">Contact</a>
+  </nav>
+</header>
+
+<!-- ========== PAGE HEADER ========== -->
+<section class="page-header" style="background-image:url('images/chantier_aulnays.jfif'); background-size:cover; background-position:center;">
+  <div class="page-header-content">
+    <p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Engagements</p>
+    <h1 class="page-header-titre">Le Sens de l'Engagement</h1>
+    <p class="page-header-sous-titre">Réduire les exigences physiques des métiers de la construction, diminuer les risques et la pénibilité sur le terrain : c'est notre vision.</p>
+  </div>
+</section>
+
+<!-- ========== 3 ENGAGEMENTS — CARTES ========== -->
+<section class="engagements">
+  <div class="engagements-inner">
+    <div class="section-header">
+      <span class="titre-section bordeaux">Nos Engagements</span>
+    </div>
+    <div class="engagements-grid">
+      <div class="engagement-card">
+        <svg class="engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        <h3 class="engagement-titre">La Rigueur &amp; la Fluidité</h3>
+        <p class="engagement-texte">
+          A sa création, l'entreprise s'est exclusivement consacrée aux chantiers de gros œuvre et de réhabilitation pour asseoir un savoir-faire aujourd'hui largement reconnu.
+        </p>
+        <p class="engagement-texte" style="margin-top:10px;">
+          Avec leur excellente connaissance de tous les métiers du bâtiment, les équipes pilotent les différentes tâches d'un chantier avec rigueur et fluidité — une garantie de qualité pour nos clients et un gain de temps précieux en Entreprise Générale.
+        </p>
+      </div>
+      <div class="engagement-card">
+        <svg class="engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <h3 class="engagement-titre">La Réduction des Efforts Inutiles</h3>
+        <p class="engagement-texte">
+          Réduire les exigences physiques des métiers de la construction est notre vision. COBAT cherche constamment à en diminuer les risques et la pénibilité sur le terrain.
+        </p>
+        <p class="engagement-texte" style="margin-top:10px;">
+          La propreté permanente des chantiers et l'encombrement minimum des lieux favorisent le bon enchaînement des étapes et minimisent les risques d'accidents. L'emploi de prémurs réduit considérablement la manutention et les charges lourdes.
+        </p>
+      </div>
+      <div class="engagement-card">
+        <svg class="engagement-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
+        </svg>
+        <h3 class="engagement-titre">Le Sens de l'Engagement</h3>
+        <p class="engagement-texte">
+          Cobat Constructions s'est engagée dans l'économie circulaire avec la création d'une filiale de Groupe Povataj, spécialisée dans le tri, le recyclage des déchets de chantiers et le nettoyage de bâtiments.
+        </p>
+        <p class="engagement-texte" style="margin-top:10px;">
+          Depuis 2014, <strong style="color:var(--bordeaux);">CCP Environnement</strong> œuvre à rendre nos chantiers toujours plus propres en réduisant le volume de déchets ultimes et en valorisant les matières recyclables : métaux, carton, verre, plâtre...
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SÉCURITÉ — TAUX D'ACCIDENT ========== -->
+<section class="contenu-section">
+  <div class="contenu-inner">
+    <div class="contenu-grid">
+      <div>
+        <span class="bordure-haut-bordeaux"></span>
+        <h2 class="titre-h2 bordeaux">La Sécurité avant tout</h2>
+        <div class="texte-contenu">
+          <p>
+            La propreté permanente des chantiers et l'encombrement minimum des lieux favorisent le bon enchaînement des étapes et minimisent les risques d'accidents.
+          </p>
+          <p>
+            L'emploi de prémurs permet de réduire considérablement la manutention et les charges lourdes. Dans les faits, notre taux d'accidents du travail est de <strong>1,22 %</strong> contre <strong>8,1 %</strong> au niveau national.
+          </p>
+        </div>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        <div style="background:var(--gris-clair); padding:28px 24px; border-left:4px solid var(--bordeaux);">
+          <span style="font-family:Georgia, serif; font-size:2.4rem; font-weight:700; color:var(--bordeaux); display:block; line-height:1;">1,22%</span>
+          <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#777;">Taux d'accidents COBAT</span>
+        </div>
+        <div style="background:var(--gris-clair); padding:28px 24px; border-left:4px solid #999;">
+          <span style="font-family:Georgia, serif; font-size:2.4rem; font-weight:700; color:#999; display:block; line-height:1;">8,1%</span>
+          <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:#777;">Moyenne nationale du secteur</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CCP ENVIRONNEMENT ========== -->
+<section class="contenu-section alt">
+  <div class="contenu-inner">
+    <div class="contenu-grid inverse">
+      <img class="contenu-img" src="images/gros_oeuvres.jfif" alt="CCP Environnement — recyclage des déchets"
+           onerror="this.style.background='linear-gradient(135deg,#1A5BA8,#0F3D78)'">
+      <div>
+        <span class="bordure-haut-bleu"></span>
+        <h2 class="titre-h2">CCP Environnement</h2>
+        <div class="texte-contenu">
+          <p>
+            Cobat Constructions s'est engagée dans l'économie circulaire avec la création d'une filiale de Groupe Povataj, spécialisée dans le tri, le recyclage des déchets de chantiers et le nettoyage de bâtiments.
+          </p>
+          <p>
+            Depuis <strong class="bleu">2014</strong>, CCP Environnement œuvre à rendre nos chantiers toujours plus propres en réduisant le volume de déchets ultimes et en valorisant les matières recyclables.
+          </p>
+        </div>
+        <ul class="liste-cobat">
+          <li>Tri sélectif sur chantier</li>
+          <li>Recyclage des métaux, cartons, verre et plâtre</li>
+          <li>Nettoyage de bâtiments</li>
+          <li>Réduction du volume de déchets ultimes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CHIFFRES ENGAGEMENTS ========== -->
+<section class="chiffres">
+  <div class="chiffres-inner cols-4">
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">1,22%</span>
+      <span class="chiffre-label">Taux d'accidents du travail</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">400</span>
+      <span class="chiffre-label">Bases-vie</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">2014</span>
+      <span class="chiffre-label">Création de CCP Environnement</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">100%</span>
+      <span class="chiffre-label">Chantiers triés &amp; valorisés</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA CONTACT ========== -->
+<section class="cta-contact" id="contact">
+  <div class="cta-content">
+    <h2 class="cta-titre">Un projet de construction ?</h2>
+    <p class="cta-sous-titre">Nos équipes sont à votre écoute</p>
+    <div class="cta-actions">
+      <a href="tel:0344528647" class="btn btn-blanc">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 44 52 86 47
+      </a>
+      <a href="contact.html" class="btn btn-outline">Nous écrire</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="footer-logo"
+           onerror="this.style.display='none'">
+      <span class="footer-border-top"></span>
+      <p class="footer-desc">
+        Créée en 2001, COBAT Constructions est une entreprise de construction spécialisée en démolition, terrassement, réhabilitation, gros œuvre et entreprise générale.
+      </p>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        1 rue Sainte-Mère Teresa, 60110 Amblainville
+      </div>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 44 52 86 47
+      </div>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Navigation</p>
+      <a href="index.html" class="footer-lien">Accueil</a>
+      <a href="entreprise.html" class="footer-lien">L'Entreprise</a>
+      <a href="expertises.html" class="footer-lien">Nos Expertises</a>
+      <a href="realisations.html" class="footer-lien">Nos Réalisations</a>
+      <a href="engagements.html" class="footer-lien">Engagements</a>
+      <a href="contact.html" class="footer-lien">Contact</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Nos Métiers</p>
+      <a href="expertises.html#demolition" class="footer-lien">Démolition</a>
+      <a href="expertises.html#terrassement" class="footer-lien">Terrassement</a>
+      <a href="expertises.html#rehabilitation" class="footer-lien">Réhabilitation</a>
+      <a href="expertises.html#construction" class="footer-lien">Construction</a>
+      <a href="expertises.html#gros-oeuvre" class="footer-lien">Gros Œuvre</a>
+      <a href="expertises.html#entreprise-generale" class="footer-lien">Entreprise Générale</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Groupe Povataj</p>
+      <a href="#" class="footer-lien">CCP Environnement</a>
+      <a href="#" class="footer-lien">Corem Promotion</a>
+      <a href="#" class="footer-lien">10 Fers Serrurerie</a>
+      <a href="#" class="footer-lien">Armatures de France</a>
+      <a href="#" class="footer-lien">Povarent</a>
+      <a href="#" class="footer-lien">Povimmo</a>
+    </div>
+  </div>
+
+  <div class="footer-bas">
+    <span>© 2025 COBAT Constructions — Tous droits réservés</span>
+    <span>Certifié QUALIBAT — Qualifications 1111 &amp; 2113</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

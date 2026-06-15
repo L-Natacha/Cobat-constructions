@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L'Entreprise — COBAT Constructions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html">
+        <img src="images/logo-cobat.png" alt="COBAT Constructions" class="logo"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      </a>
+      <a href="index.html"
+        style="display:none; align-items:center; gap:4px; font-family:Georgia,serif; font-size:1.1rem; font-weight:900; color:var(--bordeaux);">
+        <span style="font-size:2rem; line-height:1;">C</span>
+        <div style="line-height:1.1">
+          <div style="font-size:0.9rem; color:var(--bordeaux); letter-spacing:0.05em;">OBAT</div>
+          <div style="font-size:0.9rem; color:var(--bleu); letter-spacing:0.05em;">ONSTRUCTIONS</div>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-item">Accueil</a>
+        <a href="entreprise.html" class="nav-item actif">L'Entreprise</a>
+        <a href="realisations.html" class="nav-item">Nos Réalisations</a>
+        <a href="expertises.html" class="nav-item">Nos Expertises</a>
+        <a href="engagements.html" class="nav-item">Engagements</a>
+        <a href="contact.html" class="nav-cta">Contact</a>
+      </nav>
+
+      <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="nav-mobile" id="navMobile">
+      <a href="index.html">Accueil</a>
+      <a href="entreprise.html" class="actif">L'Entreprise</a>
+      <a href="realisations.html">Nos Réalisations</a>
+      <a href="expertises.html">Nos Expertises</a>
+      <a href="engagements.html">Engagements</a>
+      <a href="contact.html" style="color:var(--bordeaux); font-weight:700;">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="page-header"
+    style="background-image:url('images/siege_povataj.jfif'); background-size:cover; background-position:center;">
+    <div class="page-header-content">
+      <p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>L'Entreprise</p>
+      <h1 class="page-header-titre">L'Entreprise</h1>
+      <p class="page-header-sous-titre">Depuis 2001, COBAT Constructions construit son savoir-faire au sein du Groupe
+        POVATAJ — une histoire de famille, de rigueur et de transmission.</p>
+    </div>
+  </section>
+
+  <!-- ========== HISTOIRE ========== -->
+  <section class="contenu-section">
+    <div class="contenu-inner">
+      <div class="contenu-grid">
+        <div>
+          <span class="bordure-haut-bordeaux"></span>
+          <h2 class="titre-h2 bordeaux">Notre Histoire</h2>
+          <div class="texte-contenu">
+            <p>
+              <strong>Cobat Constructions</strong> est créée le 18 juillet 2001 par Kreshnik (Pascal) Povataj. Il sera
+              rejoint par la suite par Kushtrim, Vlorijan &amp; Ibish. Forte d'une expérience acquise autour de nombreux
+              projets ambitieux, la société s'est peu à peu dotée de partenaires de confiance et a donné naissance en
+              2012 à <strong class="bleu">Groupe POVATAJ</strong>.
+            </p>
+            <p>
+              Le groupe est aujourd'hui le résultat d'une expertise construite autour de professionnels et de
+              spécialistes qui excellent dans différents secteurs de la construction.
+            </p>
+            <p>
+              Avec un capital détenu par 12 membres de la famille Povataj, le groupe est porté par de fortes valeurs,
+              avec une nouvelle génération prête à prendre la relève !
+            </p>
+          </div>
+        </div>
+        <img class="contenu-img" src="images/equipe_povataj.jfif" alt="Équipe COBAT Constructions"
+          onerror="this.style.background='linear-gradient(135deg,#1A5BA8,#8B1A2A)'">
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SIÈGE DU GROUPE ========== -->
+  <section class="contenu-section alt">
+    <div class="contenu-inner">
+      <div class="contenu-grid inverse">
+        <img class="contenu-img" src="images/siege_povataj.jfif" alt="Siège du Groupe POVATAJ — Amblainville"
+          onerror="this.style.background='linear-gradient(135deg,#1A5BA8,#0F3D78)'">
+        <div>
+          <span class="bordure-haut-bleu"></span>
+          <h2 class="titre-h2">Le Siège du Groupe</h2>
+          <div class="texte-contenu">
+            <p>
+              Les équipes de <strong class="bleu">Cobat Constructions</strong> ont participé activement à la conception
+              et la construction du siège emblématique de Groupe POVATAJ.
+            </p>
+            <p>
+              Situé au 1 rue Sainte-Mère Teresa à Amblainville, le siège est la vitrine par excellence du savoir-faire
+              d'exception de tous les collaborateurs du groupe et de la parfaite maîtrise du béton de Cobat
+              Constructions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRÉSENCE ÎLE-DE-FRANCE & HAUTS-DE-FRANCE ========== -->
+  <section class="presence-section">
+    <div class="presence-grid">
+      <div>
+        <span class="bordure-haut-bordeaux"></span>
+        <h2 class="titre-h2 bordeaux">Une présence en Île-de-France<br>et dans les Hauts-de-France</h2>
+        <div class="texte-contenu">
+          <p>
+            Grâce à <strong>Groupe Povataj</strong>, nous sommes désormais présents à chaque étape — de la création de
+            votre projet à sa finalisation.
+          </p>
+        </div>
+        <ul class="liste-cobat">
+          <li>Démolition</li>
+          <li>Réhabilitation</li>
+          <li>Construction</li>
+          <li>Gros œuvre</li>
+        </ul>
+      </div>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:24px;">
+        <img src="images/carte-presence.png" alt="Carte de présence Île-de-France et Hauts-de-France"
+          style="max-width:380px; width:100%;" onerror="this.style.display='none'">
+        <div class="presence-stat-badge">
+          <span class="nb">40</span>
+          <span class="label">Chantiers en cours</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATIONS ========== -->
+  <section class="contenu-section">
+    <div class="contenu-inner">
+      <span class="bordure-haut-bleu"></span>
+      <h2 class="titre-h2">Nos Certifications</h2>
+      <div class="texte-contenu" style="max-width:760px;">
+        <p>
+          Certifié <strong class="bleu">QUALIBAT</strong>, Cobat Constructions possède également les qualifications
+          professionnelles suivantes : 1111 (démolition), 2113 (maçonnerie et béton armé technicité supérieure).
+        </p>
+      </div>
+      <div class="certifs-grid">
+        <div class="certif-badge">
+          <svg class="certif-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+          <div>
+            <p class="certif-badge-titre">Certifié QUALIBAT</p>
+            <p class="certif-badge-sous">Label de qualité reconnu</p>
+          </div>
+        </div>
+        <div class="certif-badge">
+          <svg class="certif-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6" />
+          </svg>
+          <div>
+            <p class="certif-badge-titre">Qualification 1111</p>
+            <p class="certif-badge-sous">Démolition</p>
+          </div>
+        </div>
+        <div class="certif-badge">
+          <svg class="certif-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="3" y="3" width="18" height="18" rx="2" />
+            <path d="M3 9h18M9 21V9" />
+          </svg>
+          <div>
+            <p class="certif-badge-titre">Qualification 2113</p>
+            <p class="certif-badge-sous">Maçonnerie &amp; béton armé — technicité supérieure</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GROUPE POVATAJ ========== -->
+  <section class="metiers">
+    <div class="section-header">
+      <span class="titre-section bordeaux">Groupe Povataj — Notre Force</span>
+    </div>
+    <div class="texte-contenu" style="max-width:1280px; margin:0 auto; text-align:center;">
+      <p>
+        Cobat Constructions fait partie du <strong class="bleu">Groupe Povataj</strong>, un ensemble de filiales
+        complémentaires et spécialistes qui œuvrent chaque jour pour rendre le groupe toujours plus incontournable.
+      </p>
+      <div style="margin-top:28px;">
+        <a href="https://groupepovataj.fr" target="_blank" rel="noopener" class="btn btn-bleu">
+          Découvrir le Groupe Povataj
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA CONTACT ========== -->
+  <section class="cta-contact" id="contact">
+    <div class="cta-content">
+      <h2 class="cta-titre">Un projet de construction ?</h2>
+      <p class="cta-sous-titre">Nos équipes sont à votre écoute</p>
+      <div class="cta-actions">
+        <a href="tel:0344528647" class="btn btn-blanc">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          03 44 52 86 47
+        </a>
+        <a href="contact.html" class="btn btn-outline">Nous écrire</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <img src="images/logo-cobat.png" alt="COBAT Constructions" class="footer-logo"
+          onerror="this.style.display='none'">
+        <span class="footer-border-top"></span>
+        <p class="footer-desc">
+          Créée en 2001, COBAT Constructions est une entreprise de construction spécialisée en démolition, terrassement,
+          réhabilitation, gros œuvre et entreprise générale.
+        </p>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+            <circle cx="12" cy="10" r="3" />
+          </svg>
+          1 rue Sainte-Mère Teresa, 60110 Amblainville
+        </div>
+        <div class="footer-contact-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+          </svg>
+          03 44 52 86 47
+        </div>
+      </div>
+
+      <div>
+        <p class="footer-titre-col">Navigation</p>
+        <a href="index.html" class="footer-lien">Accueil</a>
+        <a href="entreprise.html" class="footer-lien">L'Entreprise</a>
+        <a href="expertises.html" class="footer-lien">Nos Expertises</a>
+        <a href="realisations.html" class="footer-lien">Nos Réalisations</a>
+        <a href="engagements.html" class="footer-lien">Engagements</a>
+        <a href="contact.html" class="footer-lien">Contact</a>
+      </div>
+
+      <div>
+        <p class="footer-titre-col">Nos Métiers</p>
+        <a href="expertises.html#demolition" class="footer-lien">Démolition</a>
+        <a href="expertises.html#terrassement" class="footer-lien">Terrassement</a>
+        <a href="expertises.html#rehabilitation" class="footer-lien">Réhabilitation</a>
+        <a href="expertises.html#construction" class="footer-lien">Construction</a>
+        <a href="expertises.html#gros-oeuvre" class="footer-lien">Gros Œuvre</a>
+        <a href="expertises.html#entreprise-generale" class="footer-lien">Entreprise Générale</a>
+      </div>
+
+      <div>
+        <p class="footer-titre-col">Groupe Povataj</p>
+        <a href="#" class="footer-lien">CCP Environnement</a>
+        <a href="#" class="footer-lien">Corem Promotion</a>
+        <a href="#" class="footer-lien">10 Fers Serrurerie</a>
+        <a href="#" class="footer-lien">Armatures de France</a>
+        <a href="#" class="footer-lien">Povarent</a>
+        <a href="#" class="footer-lien">Povimmo</a>
+      </div>
+    </div>
+
+    <div class="footer-bas">
+      <span>© 2025 COBAT Constructions — Tous droits réservés</span>
+      <span>Certifié QUALIBAT — Qualifications 1111 &amp; 2113</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

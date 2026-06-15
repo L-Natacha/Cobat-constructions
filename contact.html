@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — COBAT Constructions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    </a>
+    <a href="index.html" style="display:none; align-items:center; gap:4px; font-family:Georgia,serif; font-size:1.1rem; font-weight:900; color:var(--bordeaux);">
+      <span style="font-size:2rem; line-height:1;">C</span>
+      <div style="line-height:1.1">
+        <div style="font-size:0.9rem; color:var(--bordeaux); letter-spacing:0.05em;">OBAT</div>
+        <div style="font-size:0.9rem; color:var(--bleu); letter-spacing:0.05em;">ONSTRUCTIONS</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-item">Accueil</a>
+      <a href="entreprise.html" class="nav-item">L'Entreprise</a>
+      <a href="realisations.html" class="nav-item">Nos Réalisations</a>
+      <a href="expertises.html" class="nav-item">Nos Expertises</a>
+      <a href="engagements.html" class="nav-item">Engagements</a>
+      <a href="contact.html" class="nav-cta" style="background:var(--bordeaux-dark);">Contact</a>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Accueil</a>
+    <a href="entreprise.html">L'Entreprise</a>
+    <a href="realisations.html">Nos Réalisations</a>
+    <a href="expertises.html">Nos Expertises</a>
+    <a href="engagements.html">Engagements</a>
+    <a href="contact.html" class="actif" style="color:var(--bordeaux); font-weight:700;">Contact</a>
+  </nav>
+</header>
+
+<!-- ========== PAGE HEADER ========== -->
+<section class="page-header" style="background-image:url('images/grue.jpg'); background-size:cover; background-position:center;">
+  <div class="page-header-content">
+    <p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Contact</p>
+    <h1 class="page-header-titre">Contactez-Nous</h1>
+    <p class="page-header-sous-titre">Un projet de construction ? Nos équipes sont à votre écoute pour vous accompagner de la conception à la finalisation.</p>
+  </div>
+</section>
+
+<!-- ========== INFOS CONTACT ========== -->
+<section class="contact-section">
+  <div class="contenu-inner">
+    <span class="bordure-haut-bordeaux"></span>
+    <h2 class="titre-h2 bordeaux">Nos Coordonnées</h2>
+
+    <div class="contact-infos" style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:30px;">
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <p class="contact-info-titre">Adresse</p>
+          <p class="contact-info-texte">1 rue Sainte-Mère Teresa<br>60110 Amblainville, France</p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div>
+          <p class="contact-info-titre">Téléphone</p>
+          <p class="contact-info-texte"><a href="tel:0344528647">03 44 52 86 47</a></p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <p class="contact-info-titre">E-mail</p>
+          <p class="contact-info-texte"><a href="mailto:contact@cobatconstructions.com">contact@cobatconstructions.com</a></p>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div>
+          <p class="contact-info-titre">Horaires</p>
+          <p class="contact-info-texte">Lundi — Vendredi : 8h00 - 18h00</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carte -->
+    <iframe class="contact-map" style="height:400px; margin-top:40px;"
+      src="https://www.google.com/maps?q=1+rue+Sainte-M%C3%A8re+Teresa,+60110+Amblainville,+France&output=embed"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="footer-logo"
+           onerror="this.style.display='none'">
+      <span class="footer-border-top"></span>
+      <p class="footer-desc">
+        Créée en 2001, COBAT Constructions est une entreprise de construction spécialisée en démolition, terrassement, réhabilitation, gros œuvre et entreprise générale.
+      </p>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        1 rue Sainte-Mère Teresa, 60110 Amblainville
+      </div>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 44 52 86 47
+      </div>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Navigation</p>
+      <a href="index.html" class="footer-lien">Accueil</a>
+      <a href="entreprise.html" class="footer-lien">L'Entreprise</a>
+      <a href="expertises.html" class="footer-lien">Nos Expertises</a>
+      <a href="realisations.html" class="footer-lien">Nos Réalisations</a>
+      <a href="engagements.html" class="footer-lien">Engagements</a>
+      <a href="contact.html" class="footer-lien">Contact</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Nos Métiers</p>
+      <a href="expertises.html#demolition" class="footer-lien">Démolition</a>
+      <a href="expertises.html#terrassement" class="footer-lien">Terrassement</a>
+      <a href="expertises.html#rehabilitation" class="footer-lien">Réhabilitation</a>
+      <a href="expertises.html#construction" class="footer-lien">Construction</a>
+      <a href="expertises.html#gros-oeuvre" class="footer-lien">Gros Œuvre</a>
+      <a href="expertises.html#entreprise-generale" class="footer-lien">Entreprise Générale</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Groupe Povataj</p>
+      <a href="#" class="footer-lien">CCP Environnement</a>
+      <a href="#" class="footer-lien">Corem Promotion</a>
+      <a href="#" class="footer-lien">10 Fers Serrurerie</a>
+      <a href="#" class="footer-lien">Armatures de France</a>
+      <a href="#" class="footer-lien">Povarent</a>
+      <a href="#" class="footer-lien">Povimmo</a>
+    </div>
+  </div>
+
+  <div class="footer-bas">
+    <span>© 2025 COBAT Constructions — Tous droits réservés</span>
+    <span>Certifié QUALIBAT — Qualifications 1111 &amp; 2113</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

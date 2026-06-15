@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Réalisations — COBAT Constructions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html">
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+    </a>
+    <a href="index.html" style="display:none; align-items:center; gap:4px; font-family:Georgia,serif; font-size:1.1rem; font-weight:900; color:var(--bordeaux);">
+      <span style="font-size:2rem; line-height:1;">C</span>
+      <div style="line-height:1.1">
+        <div style="font-size:0.9rem; color:var(--bordeaux); letter-spacing:0.05em;">OBAT</div>
+        <div style="font-size:0.9rem; color:var(--bleu); letter-spacing:0.05em;">ONSTRUCTIONS</div>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-item">Accueil</a>
+      <a href="entreprise.html" class="nav-item">L'Entreprise</a>
+      <a href="realisations.html" class="nav-item actif">Nos Réalisations</a>
+      <a href="expertises.html" class="nav-item">Nos Expertises</a>
+      <a href="engagements.html" class="nav-item">Engagements</a>
+      <a href="contact.html" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="nav-mobile" id="navMobile">
+    <a href="index.html">Accueil</a>
+    <a href="entreprise.html">L'Entreprise</a>
+    <a href="realisations.html" class="actif">Nos Réalisations</a>
+    <a href="expertises.html">Nos Expertises</a>
+    <a href="engagements.html">Engagements</a>
+    <a href="contact.html" style="color:var(--bordeaux); font-weight:700;">Contact</a>
+  </nav>
+</header>
+
+<!-- ========== PAGE HEADER ========== -->
+<section class="page-header" style="background-image:url('images/pointe_des_arts.jfif'); background-size:cover; background-position:center;">
+  <div class="page-header-content">
+    <p class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Nos Réalisations</p>
+    <h1 class="page-header-titre">Des Défis de Taille</h1>
+    <p class="page-header-sous-titre">Les projets Picpus et Île Seguin, des chantiers aux dimensions hors normes, prouvent notre savoir-faire connu et reconnu depuis plus de 20 ans.</p>
+  </div>
+</section>
+
+<!-- ========== GALERIE RÉALISATIONS ========== -->
+<section class="realisations">
+  <div class="realisations-inner">
+    <div class="section-header">
+      <span class="titre-section">Nos Réalisations</span>
+    </div>
+
+    <!-- Filtres -->
+    <div class="filtres">
+      <button class="filtre-btn actif" data-filtre="tous">Tous</button>
+      <button class="filtre-btn" data-filtre="demolition">Démolition</button>
+      <button class="filtre-btn" data-filtre="rehabilitation">Réhabilitation</button>
+      <button class="filtre-btn" data-filtre="construction">Construction</button>
+      <button class="filtre-btn" data-filtre="gros-oeuvre">Gros Œuvre</button>
+    </div>
+
+    <div class="realisations-grid grid-uniforme" style="margin-top:28px;">
+
+      <div class="realisation-card" data-categorie="construction">
+        <img src="images/pointe_des_arts.jfif" alt="Pointe des Arts — Île Seguin"
+             onerror="this.style.background='#1A5BA8'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Boulogne-Billancourt — Construction</p>
+          <p class="realisation-nom">Pointe des Arts — Île Seguin</p>
+        </div>
+      </div>
+
+      <div class="realisation-card" data-categorie="gros-oeuvre">
+        <img src="images/hlb-p304-picpus-pcm_rue2-naska-2950x1960-q80.jpg" alt="Picpus Paris 12"
+             onerror="this.style.background='#8B1A2A'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Paris 12ème — Gros Œuvre</p>
+          <p class="realisation-nom">Chantier Picpus</p>
+        </div>
+      </div>
+
+      <div class="realisation-card" data-categorie="construction">
+        <img src="images/chantier_aulnays.jfif" alt="Chantier Hauts-de-France"
+             onerror="this.style.background='#444'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Hauts-de-France — Construction</p>
+          <p class="realisation-nom">Construction &amp; Gros Œuvre</p>
+        </div>
+      </div>
+
+      <div class="realisation-card" data-categorie="demolition">
+        <img src="images/Chambourcy.jfif" alt="Chantier de démolition"
+             onerror="this.style.background='#6A1020'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Île-de-France — Démolition</p>
+          <p class="realisation-nom">Déconstruction sélective</p>
+        </div>
+      </div>
+
+      <div class="realisation-card" data-categorie="rehabilitation">
+        <img src="images/Chambourcy.jfif" alt="Chantier de réhabilitation"
+             onerror="this.style.background='#0F3D78'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Hauts-de-France — Réhabilitation</p>
+          <p class="realisation-nom">Réhabilitation lourde</p>
+        </div>
+      </div>
+
+      <div class="realisation-card" data-categorie="gros-oeuvre">
+        <img src="images/gros_oeuvres.jfif" alt="Chantier gros œuvre"
+             onerror="this.style.background='#1A5BA8'">
+        <div class="realisation-overlay">
+          <p class="realisation-tag">Île-de-France — Gros Œuvre</p>
+          <p class="realisation-nom">Logements collectifs</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOCUS PROJETS ========== -->
+<section class="contenu-section alt">
+  <div class="contenu-inner">
+    <div class="contenu-grid">
+      <img class="contenu-img" src="images/pointe_des_arts.jfif" alt="Pointe des Arts — Île Seguin"
+           onerror="this.style.background='linear-gradient(135deg,#1A5BA8,#0F3D78)'">
+      <div>
+        <span class="bordure-haut-bleu"></span>
+        <h2 class="titre-h2">Pointe des Arts — Île Seguin</h2>
+        <p class="chiffre-label" style="color:var(--bleu); margin-bottom:14px;">Boulogne-Billancourt</p>
+        <div class="texte-contenu">
+          <p>
+            Forts de leurs capacités à relever tous les défis, les talents qui œuvrent chaque jour au sein de Cobat Constructions ne reculent devant aucun chantier, quelle que soit sa taille.
+          </p>
+          <p>
+            Le projet de l'Île Seguin, un chantier aux dimensions hors normes, illustre notre savoir-faire connu et reconnu dans la construction depuis plus de 20 ans.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contenu-section">
+  <div class="contenu-inner">
+    <div class="contenu-grid inverse">
+      <div>
+        <span class="bordure-haut-bordeaux"></span>
+        <h2 class="titre-h2 bordeaux">Chantier Picpus</h2>
+        <p class="chiffre-label" style="color:var(--bordeaux); margin-bottom:14px;">Paris 12ème arrondissement</p>
+        <div class="texte-contenu">
+          <p>
+            Le projet Picpus, situé dans le 12ème arrondissement de Paris, est un autre exemple emblématique des chantiers d'envergure menés par COBAT Constructions.
+          </p>
+          <p>
+            Ces réalisations témoignent de notre capacité à intervenir en milieu urbain dense, dans le respect des délais et des contraintes techniques propres aux grandes métropoles.
+          </p>
+        </div>
+      </div>
+      <img class="contenu-img" src="images/hlb-p304-picpus-pcm_rue2-naska-2950x1960-q80.jpg" alt="Chantier Picpus"
+           onerror="this.style.background='linear-gradient(135deg,#8B1A2A,#6A1020)'">
+    </div>
+  </div>
+</section>
+
+<!-- ========== CHIFFRES CLÉS ========== -->
+<section class="chiffres">
+  <div class="chiffres-inner">
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">36 000</span>
+      <span class="chiffre-label">Logements réalisés</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">2 500</span>
+      <span class="chiffre-label">Logements en Ent. Générale</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">40</span>
+      <span class="chiffre-label">Chantiers en cours</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">150M€</span>
+      <span class="chiffre-label">Chiffre d'affaires (2024)</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">380</span>
+      <span class="chiffre-label">Collaborateurs</span>
+    </div>
+    <div class="chiffre-item">
+      <span class="chiffre-nombre">20+</span>
+      <span class="chiffre-label">Ans d'expertise</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA CONTACT ========== -->
+<section class="cta-contact" id="contact">
+  <div class="cta-content">
+    <h2 class="cta-titre">Un projet de construction ?</h2>
+    <p class="cta-sous-titre">Nos équipes sont à votre écoute</p>
+    <div class="cta-actions">
+      <a href="tel:0344528647" class="btn btn-blanc">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 44 52 86 47
+      </a>
+      <a href="contact.html" class="btn btn-outline">Nous écrire</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <img src="images/logo-cobat.png" alt="COBAT Constructions" class="footer-logo"
+           onerror="this.style.display='none'">
+      <span class="footer-border-top"></span>
+      <p class="footer-desc">
+        Créée en 2001, COBAT Constructions est une entreprise de construction spécialisée en démolition, terrassement, réhabilitation, gros œuvre et entreprise générale.
+      </p>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        1 rue Sainte-Mère Teresa, 60110 Amblainville
+      </div>
+      <div class="footer-contact-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        03 44 52 86 47
+      </div>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Navigation</p>
+      <a href="index.html" class="footer-lien">Accueil</a>
+      <a href="entreprise.html" class="footer-lien">L'Entreprise</a>
+      <a href="expertises.html" class="footer-lien">Nos Expertises</a>
+      <a href="realisations.html" class="footer-lien">Nos Réalisations</a>
+      <a href="engagements.html" class="footer-lien">Engagements</a>
+      <a href="contact.html" class="footer-lien">Contact</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Nos Métiers</p>
+      <a href="expertises.html#demolition" class="footer-lien">Démolition</a>
+      <a href="expertises.html#terrassement" class="footer-lien">Terrassement</a>
+      <a href="expertises.html#rehabilitation" class="footer-lien">Réhabilitation</a>
+      <a href="expertises.html#construction" class="footer-lien">Construction</a>
+      <a href="expertises.html#gros-oeuvre" class="footer-lien">Gros Œuvre</a>
+      <a href="expertises.html#entreprise-generale" class="footer-lien">Entreprise Générale</a>
+    </div>
+
+    <div>
+      <p class="footer-titre-col">Groupe Povataj</p>
+      <a href="#" class="footer-lien">CCP Environnement</a>
+      <a href="#" class="footer-lien">Corem Promotion</a>
+      <a href="#" class="footer-lien">10 Fers Serrurerie</a>
+      <a href="#" class="footer-lien">Armatures de France</a>
+      <a href="#" class="footer-lien">Povarent</a>
+      <a href="#" class="footer-lien">Povimmo</a>
+    </div>
+  </div>
+
+  <div class="footer-bas">
+    <span>© 2025 COBAT Constructions — Tous droits réservés</span>
+    <span>Certifié QUALIBAT — Qualifications 1111 &amp; 2113</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
